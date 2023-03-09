@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task List</title>
+    <link rel="shortcut icon" href="../img/icon.png" type="image/x-icon">
+    <!-- css do projeto -->
+    <link rel="stylesheet" href="../css/styles.css" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- JS do projeto -->
+    <script src="scrips.js" defer></script>
+  </head>
+  <body>
+    <!-- container principal -->
+    <div class="todo-container">
+        <!-- cabeçalho -->
+        <header>
+            <h1>Task List</h1>
+        </header>
+        <!-- tarefa a adicionar -->
+        <form id="todo-form">
+            <p>Adicione sua tarefa:</p>
+            <!-- input com o botão para adicionar tarefa -->
+            <div class="form-control">
+                <input type="text" id="todo-input" placeholder="O que você vai fazer?">
+                <button type="submit">
+                    <!-- Ícone do fa -->
+                    <i class="fa-thin fa-plus"></i>
+                </button>
+            </div>
+        </form>
+        <!-- Edição da tarefa -->
+        <form id="edit-form" class="hide">
+            <p>Edite sua tarefa:</p>
+            <div class="edit-control">
+                <input type="text" id="edit-input" placeholder="Escreva sua tarefa">
+                <button type="submit">
+                    <i class="fa-solid fa-check-double"></i>
+                </button>
+            </div>
+            <!-- Cancela a edição -->
+            <button id="cancel-edit-btn">Cancelar</button>
+        </form>
+        <!-- Barra de ferramentas -->
+        <div id="toolbar">
+            <div id="search">
+                <h4>Pesquisar:</h4>
+                <form>
+                    <input type="text" id="searchi-input" placeholder="Buscar">
+                    <button id="erase-button">
+                        <i class="fa-solid fa-delete-left"></i>
+                    </button>
+                </form>
+            </div>
+            <!-- Filtro de tarefas -->
+            <div id="filter">
+                <h4>Filtrar:</h4>
+                <select id="filter-select">
+                    <option value="all">Todas</option>
+                    <option value="todo">A fazer</option>
+                    <option value="done">Feitas</option>
+                </select>
+            </div>
+        </div>
+        <!-- task list -->
+        <div id="todo-list">
+        </div>
+    </div>
+  </body>
+</html>
