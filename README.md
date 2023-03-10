@@ -1,4 +1,4 @@
 # Task-List
-Task List feita com CSS, HTML e JS para desenvolvimento pessoal.
-Posteriormente, pretendo tornar o campo "pesquisa" do projeto funcional e implementar algum banco de dados.
+Task List made with CSS, HTML and JS for personal development.
+Later, I pretend to make the project's "search" field functional and implement some database.
 
